@@ -2,6 +2,7 @@ package com.ivanlukomskiy.santa.models;
 
 import lombok.Data;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -9,11 +10,12 @@ import java.util.Map;
  */
 @Data
 public class Person {
-    private String name;
-    private String email;
-    private Gender gender;
-    private Integer group;
-    private Map<String,String> parameters;
+    private Map<String,String> parameters = new HashMap<>();
 
-    public enum Gender {MALE, FEMALE}
+    public String toString() {
+        if(parameters!=null&&parameters.containsKey("name")) {
+            return parameters.get("name");
+        }
+        return super.toString();
+    }
 }

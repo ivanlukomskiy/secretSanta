@@ -1,0 +1,55 @@
+[
+  {
+    "parameters": {
+      "name": "Ivan",
+      "email": "ivan@me.ru",
+      "gender": "male",
+      "group": 1
+    }
+  },
+  {
+    "parameters": {
+      "name": "Maria",
+      "email": "maria@me.ru",
+      "gender": "female"
+    }
+  },
+  {
+    "parameters": {
+      "name": "Anna",
+      "email": "anna@me.ru",
+      "gender": "female",
+      "group": 1
+    }
+  },
+  {
+    "parameters": {
+      "name": "Peter",
+      "email": "peter@me.ru",
+      "gender": "male"
+    }
+  },
+  {
+    "parameters": {
+      "name": "Daria",
+      "email": "daria@me.ru",
+      "gender": "female"
+    }
+  },
+  {
+    "parameters": {
+      "name": "Rodrigo",
+      "email": "rodrigo@me.br",
+      "gender": "male",
+      "group": 2
+    }
+  },
+  {
+    "parameters": {
+      "name": "Ursula",
+      "email": "ursula@me.br",
+      "gender": "female",
+      "group": 2
+    }
+  }
+]

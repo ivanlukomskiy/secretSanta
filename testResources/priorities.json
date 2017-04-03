@@ -1,0 +1,12 @@
+{
+  "priorities": [
+    {
+      "fieldName": "gender",
+      "priorityType": "PREFER_IF_DIFFERENT"
+    },
+    {
+      "fieldName": "group",
+      "priorityType": "PREFER_IF_DIFFERENT"
+    }
+  ]
+}

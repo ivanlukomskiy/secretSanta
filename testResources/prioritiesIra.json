@@ -1,0 +1,12 @@
+{
+  "priorities": [
+    {
+      "fieldName": "local",
+      "priorityType": "PREFER_IF_DIFFERENT"
+    },
+    {
+      "fieldName": "sex",
+      "priorityType": "PREFER_IF_DIFFERENT"
+    }
+  ]
+}

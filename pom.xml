@@ -7,7 +7,13 @@
     <groupId>com.ivanlukomskiy.santa</groupId>
     <artifactId>santa</artifactId>
     <version>2.0</version>
-
+    <repositories>
+        <repository>
+            <id>conjars</id>
+            <name>conjars</name>
+            <url>http://conjars.org/repo/</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -35,8 +41,31 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>3.0.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>jgrapht</groupId>
+            <artifactId>jgrapht</artifactId>
+            <version>0.8.3</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4</version>
+        </dependency>
 
     </dependencies>
-
-
 </project>

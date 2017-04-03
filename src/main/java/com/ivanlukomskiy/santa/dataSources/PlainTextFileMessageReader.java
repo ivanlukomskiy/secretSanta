@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 @AllArgsConstructor
 public class PlainTextFileMessageReader implements MessageContentProvider {
     private String messageFilePath;
-    public static final String TOPIC_PATTERN = "(?i)^topic:\\s*\"(.*)\"\\s*$";
+    public static final String TOPIC_PATTERN = "^topic:\\s*\"(.*)\"";
 
     public MessageContent getMessageContent() throws Exception {
         MessageContent content = new MessageContent();
@@ -23,7 +23,7 @@ public class PlainTextFileMessageReader implements MessageContentProvider {
         Matcher m = Pattern.compile(TOPIC_PATTERN).matcher(text);
         if(m.find()) {
             content.setTopic(m.group(1));
-            content.setMessageText(text.replace(TOPIC_PATTERN,""));
+            content.setMessageText(text.replaceAll(TOPIC_PATTERN,""));
         } else {
             content.setTopic("Secret Santa");
             content.setMessageText(text);
