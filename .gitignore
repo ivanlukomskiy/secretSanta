@@ -1,4 +1,5 @@
-build/*
-.idea/*
+build/
+.idea/
+target/
 TODO.txt
 testResources/email.properties
